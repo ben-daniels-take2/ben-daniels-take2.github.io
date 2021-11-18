@@ -1,10 +1,286 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  height: 100vh;
-  width: 100vw;
   background-color: aquamarine;
   background-image: url(./images/blue-gear-background.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
 }
-h1 {
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: blue;
+  background-image: url(./images/blue-gear-background.jpg);
+  background-size: cover;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin-top: -70px;
+  z-index: 999;
+}
+nav a {
   color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 50px;
+  padding-bottom: 30px;
+}
+header {
+  margin-top: 50px;
+  height: auto;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  /* border: 2px solid rgb(243, 35, 35); */
+  /* background-color: purple; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  text-transform: capitalize;
+}
+header h1 {
+  /* border: 2px solid black; */
+  position: absolute;
+  text-decoration-line: underline;
+  top: 0;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+h6 {
+  font-size: 23px;
+  width: 70%;
+  margin-top: 5%;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  line-height: 1.5em;
+}
+.id-val {
+  /* border: 2px solid green; */
+  height: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.id-val p {
+  height: auto;
+  padding: 20px;
+  border-radius: 10%;
+  /* border: 2px solid black; */
+  font-size: large;
+  /* width: 90%; */
+  text-align: center;
+  line-height: 2em;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  background-color: rgba(0, 0, 0, 0.548);
+}
+.container {
+  height: 20vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.123)),
+    url(../images/blue-background.jpg);
+  /* background-size: 400px; */
+  background-position: center;
+  background-attachment: fixed;
+}
+.header1 {
+  height: 60vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: capitalize;
+  /* border: 2px solid black; */
+}
+.header1 h6 {
+  font-size: 30px;
+  margin-top: 30px;
+  /* border: 2px solid black; */
+}
+.id-val-2 {
+  /* border: 2px solid green; */
+  height: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.id-val-2 p {
+  height: auto;
+  padding: 20px;
+  border-radius: 10%;
+  /* border: 2px solid black; */
+  font-size: large;
+  /* width: 90%; */
+  text-align: center;
+  line-height: 2em;
+  text-shadow: rgb(16, 88, 170) 2px 2px 2px;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.box {
+  height: 100vh;
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.123)),
+    url(../images/blue-background.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+}
+.box-1 {
+  height: 80%;
+  width: 45%;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box-1 h6 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.692);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.id-val-3 p {
+  text-transform: capitalize;
+  height: auto;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  line-height: 2em;
+  color: white;
+  text-shadow: rgb(16, 88, 170) 2px 2px 2px;
+}
+li {
+  text-transform: capitalize;
+  line-height: 2em;
+  margin-left: 120px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.733);
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  /* border: 2px solid black; */
+}
+.box-2 {
+  height: 80%;
+  width: 45%;
+  /* background-color: rgb(100, 237, 123); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-2 h6 {
+  text-transform: capitalize;
+  color: white;
+  margin-top: -50px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.id-val-3 p {
+  text-transform: capitalize;
+  height: auto;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  line-height: 2em;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+/* <<<<<<< Learning Plan>>>>>>> */
+.header {
+  height: auto;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.397)),
+    url(../images/blue-background.jpg);
+  /* background-image: url(../images/blue-background.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* border: 2px solid rgb(250, 235, 24); */
+}
+.div-h1 {
+  /* border: 2px solid green; */
+  height: 10%;
+  width: 100%;
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: underline;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.learning-plan-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid rgb(185, 38, 70); */
+}
+.learning-plan-div p {
+  font-size: 20px;
+  padding: 80px;
+  line-height: 2em;
+}
+.learning-plan-div h6 {
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-size: 25px;
+}
+.li {
+  /* border: rgb(102, 84, 12) solid 2px; */
+  /* background-color: crimson; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.li li {
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  color: rgb(247, 245, 245);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  background-color: rgba(0, 100, 0, 0);
+}
+.contain {
+  height: 20vh;
+  width: 100%;
+  background-image: url(./images/blue-gear-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+.arrow {
+  height: 10vh;
+  position: absolute;
+  scroll-behavior: smooth;
 }
