@@ -264,6 +264,7 @@ li {
   line-height: 2em;
   font-size: large;
   background-color: rgba(0, 0, 0, 0.479);
+  text-shadow: 2px 2px 2px rgb(5, 75, 107);
   text-align: center;
   border-radius: 8%;
 }
