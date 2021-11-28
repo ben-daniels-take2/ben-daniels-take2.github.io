@@ -30,6 +30,16 @@ li {
   width: 50%;
   text-align: left;
   font-size: 18px;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+}
+.img-div {
+  height: 30%;
+  width: 50%;
+  /* background-color: blue; */
+}
+.img-div img {
+  width: 100%;
 }
 nav {
   height: 8vh;
@@ -95,10 +105,10 @@ header {
   text-transform: capitalize;
 }
 .box-2 {
-  /* background-image: url(../images/white-stairs.jpeg); */
-  background-size: 100px;
+  background-image: url(../images/white-wallpaper-hd.jpg);
+  background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -107,14 +117,15 @@ header {
   text-transform: capitalize;
 }
 .box-2-info {
-  height: 80%;
+  height: auto;
   width: 45%;
   line-height: 2em;
   text-align: left;
+  color: black;
 }
 .box-3 {
   /* background-color: chartreuse; */
-  height: 60vh;
+  height: auto;
   width: 100%;
   text-align: center;
   flex-direction: column;
@@ -131,7 +142,7 @@ header {
   width: 100%;
 }
 .box-4 {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -179,6 +190,9 @@ header {
   padding: 30px;
   line-height: 2em;
   text-transform: capitalize;
+  background-image: url(../images/white-wallpaper-hd.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .box-tech-info {
   width: 100%;
@@ -188,6 +202,11 @@ header {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  color: black;
+}
+.box-tech-info p {
+  color: black;
+  text-shadow: white 2px 2px 2px;
 }
 footer {
   height: 10vh;

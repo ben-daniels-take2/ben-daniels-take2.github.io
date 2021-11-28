@@ -46,7 +46,7 @@ header {
   height: 40%;
   width: 90%;
   /* border: 1px solid rgb(255, 255, 255); */
-  background-color: rgba(0, 0, 0, 0.158);
+  /* background-color: rgba(0, 0, 0, 0.158); */
   text-align: center;
   display: flex;
   flex-direction: column;
