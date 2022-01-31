@@ -4,20 +4,20 @@
 }
 
 h1 {
-  color: white;
-  text-shadow: rgb(0, 0, 0) 4px 2px 2px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: rgb(0, 0, 0) 4px 2px 2px; */
 }
 h4 {
   font-size: 25px;
-  color: rgb(255, 255, 255);
-  text-shadow: rgb(0, 0, 0) 4px 2px 2px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: rgb(0, 0, 0) 4px 2px 2px; */
   line-height: 1.5em;
   text-align: center;
 }
 p {
   font-size: 18px;
-  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
-  color: rgb(255, 255, 255);
+  /* text-shadow: rgb(0, 0, 0) 2px 2px 2px; */
+  color: rgb(0, 0, 0);
   /* background-color: rgba(0, 0, 0, 0.322); */
   text-align: center;
 }
@@ -25,8 +25,8 @@ li {
   width: 90%;
   text-align: left;
   font-size: 18px;
-  color: white;
-  text-shadow: black 2px 2px 2px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: black 2px 2px 2px; */
 }
 .img-div {
   height: 30%;
@@ -35,6 +35,13 @@ li {
 }
 .img-div img {
   width: 100%;
+}
+
+.values-img {
+  width: 60%;
+}
+.learn-img {
+  width: 30%;
 }
 nav {
   height: 8vh;
@@ -82,8 +89,8 @@ header {
   align-items: center;
   position: relative;
   text-transform: capitalize;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.582)),
-    url(../images/misty-blue-trees.jpg!d);
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.582)), */
+  /* url(../images/misty-blue-trees.jpg!d); */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -100,7 +107,7 @@ header {
   text-transform: capitalize;
 }
 .box-2 {
-  background-image: url(../images/white-wallpaper-hd.jpg);
+  /* background-image: url(../images/white-wallpaper-hd.jpg); */
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -135,8 +142,8 @@ header {
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.582)),
-    url(../images/misty-blue-trees.jpg!d);
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.582)),
+    url(../images/misty-blue-trees.jpg!d); */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -192,21 +199,20 @@ header {
 .tech-box {
   height: 87vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.582)),
-    url(../images/misty-blue-trees.jpg!d);
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.582)),
+    url(../images/misty-blue-trees.jpg!d); */
   background-attachment: fixed;
   background-size: cover;
 }
 .blog-box {
   height: 100%;
   width: 100%;
-  border: 2px solid black;
   /* background-color: rgb(163, 62, 62); */
   color: rgb(5, 5, 5);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .blog-box a {
@@ -227,7 +233,7 @@ header {
   padding: 30px;
   line-height: 2em;
   text-transform: capitalize;
-  background-image: url(../images/white-wallpaper-hd.jpg);
+  /* background-image: url(../images/white-wallpaper-hd.jpg); */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -271,4 +277,63 @@ footer p {
 .arrow:hover {
   transition: 0.5s;
   transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  header {
+    height: 100%;
+  }
+  h1 {
+    font-size: 1em;
+    z-index: 9999999;
+  }
+}
+
+@media (max-width: 858px) {
+  .nav a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    height: 100%;
+    z-index: 999999;
+  }
+  h1 {
+    font-size: 20px;
+    z-index: 9999999;
+    color: blueviolet;
+  }
+  .nav a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    height: 100%;
+    /* background-color: rgb(28, 139, 6); */
+  }
+  .nav {
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav a {
+    /* color: yellow; */
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 1em;
+    z-index: 9999999;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
